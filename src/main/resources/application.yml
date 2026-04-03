@@ -1,0 +1,32 @@
+mongodbDatabase: exampleDb
+mongodbUri: "mongodb://127.0.0.1:27017"
+apiPort: 9898
+
+spring:
+  application:
+    name: telco-order-service
+  data:
+    mongodb:
+      auto-index-creation: true
+
+grpc:
+  port: 9090
+
+smpp:
+  host: ${SMPP_HOST:localhost}
+  port: ${SMPP_PORT:2775}
+  systemId: ${SMPP_SYSTEM_ID:smppclient}
+  password: ${SMPP_PASSWORD:password}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,metrics
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    export:
+      prometheus:
+        enabled: true
