@@ -1,7 +1,7 @@
 # Telco Order Processing Service
 
 [![CI](https://github.com/kevin-mcm/hacom/actions/workflows/ci.yml/badge.svg)](https://github.com/kevin-mcm/hacom/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/kevin-mcm/hacom/branch/main/graph/badge.svg)](https://codecov.io/gh/kevin-mcm/hacom)
+[![codecov](https://codecov.io/gh/kevin-mcm/hacom/branch/master/graph/badge.svg)](https://app.codecov.io/gh/kevin-mcm/hacom)
 
 A Spring Boot 3.x microservice for telco order processing with hexagonal architecture.
 
